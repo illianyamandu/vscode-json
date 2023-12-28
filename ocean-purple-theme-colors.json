@@ -1,0 +1,137 @@
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+     {
+       "scope": [
+        "comment",
+        "markup.changed",
+        "meta.diff.header.git",
+        "meta.diff.header.from-file",
+        "meta.diff.header.to-file",
+        "markup.deleted.diff",
+        "markup.inserted.diff",
+        "punctuation.accessor", 
+        "keyword",
+        "storage",
+        "meta.var.expr",
+        "meta.class meta.method.declaration meta.var.expr storage.type.js",
+        "storage.type.property.js",
+        "entity.name.function",
+        "entity.other.attribute-name",
+        "keyword.operator.relational",
+        "meta.delimiter.period",
+        "meta.selector",
+        "entity.name.tag.doctype", 
+        "meta.tag.sgml.doctype",
+        "variable.other.object.property",
+        "keyword.operator.comparison",
+        "keyword.control.flow.js",
+        "keyword.control.ruby",
+        "keyword.control.loop.js",
+        "keyword.control.import.js",
+        "keyword.control.from.js",
+        "keyword.operator.instanceof.js",
+        "italic",
+        "quote",
+        "meta.tag.sgml.doctype.html",
+        "variable.other.object.js",
+        "markup.italic.markdown",
+        "markup.quote.markdown",
+        "keyword.control"
+       ],
+       "settings": {
+         "fontStyle": "italic"
+       }
+     },
+     {
+        "scope": [ // Marcador de variável do PHP
+            "punctuation.definition.variable.php"
+        ],
+        "settings": {
+            "foreground": "#a750e1"
+        }
+      },
+      {
+        "scope": [ // if e else do php
+          "keyword.control",
+        ],
+        "settings": {
+          "foreground": "#b56ae7"
+        }
+      },
+      {
+        "scope": [ // aspas, acentos e vírgulas
+          "punctuation",
+        ],
+        "settings": {
+          "foreground": "#b360eb"
+        }
+      },
+      {
+        "scope": [ // tags html
+            "entity.name.tag"
+        ],
+        "settings": {
+          "foreground": "#4ae081",
+        }
+      },
+      {
+        "scope": [ // Classe de suporte
+            "support.class",
+        ],
+        "settings": {
+            "foreground": "#89DDFF"
+        }
+      },
+      {
+        "scope": [ // Textos
+            "string",
+        ],
+        "settings": {
+          "foreground": "#6bffb8"
+        }
+      },
+      {
+        "scope": [ // Sinal de igualdade
+            "keyword",
+        ],
+        "settings": {
+          "foreground": "#b56ae7"
+        }
+      },
+      {
+        "scope": [ // Funções
+            "storage.type",
+            "storage.modifier"
+        ],
+        "settings": {
+            "foreground": "#c37ff0"
+        }
+      },
+      {
+        "scope": [ // Comentários doc php
+            "keyword.other"
+        ],
+        "settings": {
+          "foreground": "#89DDFF"
+        }
+      },
+      {
+        "scope": [ // Class alias 
+            "entity.name.type.namespace.php",
+            "entity.other.alias.php"
+        ],
+        "settings": {
+          "foreground": "#89DDFF"
+        }
+      },
+      {
+        "scope": [ // Class name
+            "entity.name.type.class.php",
+            "entity.other.inherited-class.php",
+        ],
+        "settings": {
+          "foreground": "#353be4"
+        }
+      },
+   ],
+ }
