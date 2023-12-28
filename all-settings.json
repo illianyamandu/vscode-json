@@ -1,0 +1,316 @@
+{
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 40,
+    "editor.letterSpacing": 1.5,
+    "editor.fontSize": 18,
+    "editor.fontWeight": 390,
+    // "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "Cascadia Code",
+
+    // Fonts itálicas somente para o thema GitHub Dark Default
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+         {
+           "scope": [
+            "comment",
+            // "support.class",
+            "markup.changed",
+            "meta.diff.header.git",
+            "meta.diff.header.from-file",
+            "meta.diff.header.to-file",
+            "markup.deleted.diff",
+            "markup.inserted.diff",
+            "punctuation.accessor", 
+            "keyword",
+            "storage",
+            "meta.var.expr",
+            "meta.class meta.method.declaration meta.var.expr storage.type.js",
+            "storage.type.property.js",
+            "entity.name.function",
+            "entity.other.attribute-name",
+            "keyword.operator.relational",
+            "meta.delimiter.period",
+            "meta.selector",
+            "entity.name.tag.doctype", 
+            "meta.tag.sgml.doctype",
+            "variable.other.object.property",
+            "keyword.operator.comparison",
+            "keyword.control.flow.js",
+            "keyword.control.ruby",
+            "keyword.control.loop.js",
+            "keyword.control.import.js",
+            "keyword.control.from.js",
+            "keyword.operator.instanceof.js",
+            "italic",
+            "quote",
+            "meta.tag.sgml.doctype.html",
+            "variable.other.object.js",
+            "markup.italic.markdown",
+            "markup.quote.markdown",
+            "keyword.control"
+           ],
+           "settings": {
+             "fontStyle": "italic"
+           }
+         },
+         {
+            "scope": [ // Marcador de variável do PHP
+                "punctuation.definition.variable.php"
+            ],
+            "settings": {
+                "foreground": "#89DDFF"
+            //    "foreground": "#e0664a",
+            }
+          },
+          {
+            "scope": [ // tags html
+                "entity.name.tag"
+            ],
+            "settings": {
+              "foreground": "#4ae081",
+            }
+          },
+          {
+            "scope": [ // Classe de suporte
+                "support.class",
+            ],
+            "settings": {
+                "foreground": "#c37ff0"
+            //   "foreground": "#C792EA"
+            }
+          },
+          {
+            "scope": [ // Métodos de suporte
+                "entity.name.function",
+            ],
+            "settings": {
+            //   "foreground": "#406cd4"
+            }
+          },
+          {
+            "scope": [ // Textos
+                "string",
+            ],
+            "settings": {
+            //   "foreground": "#59caa8"
+              "foreground": "#FFCB6B"
+            }
+          },
+          {
+            "scope": [ // Sinal de igualdade
+                "keyword",
+            ],
+            "settings": {
+            //   "foreground": "#fb0000"
+            }
+          },
+          {
+            "scope": [ // Funções
+                "storage.type",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#89DDFF"
+            }
+          },
+          {
+            "scope": [ // Comentários doc php
+                "keyword.other"
+            ],
+            "settings": {
+            //   "foreground": "#59caa8"
+              "foreground": "#FFCB6B"
+            }
+          },
+       ]
+     },
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.formatOnPaste": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.startupEditor": "none",
+
+    // Remove .fvm files from search
+    "search.exclude": {
+        "**/.fvm": true
+    },
+    
+    // Remove from file watching
+    "files.watcherExclude": {
+        "**/.fvm": true
+    },
+    "explorer.fileNesting.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[blade]": {
+        "editor.defaultFormatter": "amirmarmul.laravel-blade-vscode"
+    },
+    "workbench.layoutControl.enabled": false,
+    "editor.detectIndentation": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "phpfmt.enable_auto_align": true,
+    "workbench.sideBar.location": "right",
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.colorCustomizations": {        
+        // Cursos Color
+        "editorCursor.foreground": "#1f67ec8f",
+
+        // Backgound color
+        // "editor.background": "#00001F", // Azul escuro
+        // "editor.background": "#03091E", // Azul escuro
+        // "editor.background": "#011627", // Azul escuro
+        // "editor.background": "#090321", // Roxo escuro
+        // "editor.background": "#021223", // Azul escuro
+        // "editor.background": "#131827", // Azul claro
+        "editor.background": "#080808", // Black
+
+        // Bracket colors
+        "editorBracketHighlight.foreground1": "#FFD700",
+        "editorBracketHighlight.foreground2": "#DA70D6",
+        "editorBracketHighlight.foreground3": "#179fff",
+        "editorBracketHighlight.foreground4": "#19d3e8",
+
+        // Inactive guide colors
+        "editorBracketPairGuide.background1": "#ffd90080",
+        "editorBracketPairGuide.background2": "#de65de80",
+        "editorBracketPairGuide.background3": "#298fce80",
+        "editorBracketPairGuide.background4": "#19d3e8a3",
+
+        // Active guide colors
+        "editorBracketPairGuide.activeBackground1": "#ffd90080",
+        "editorBracketPairGuide.activeBackground2": "#de65de80",
+        "editorBracketPairGuide.activeBackground3": "#298fce80",
+        "editorBracketPairGuide.activeBackground4": "#19d3e8a3",
+
+        // Tree color
+        "tree.indentGuidesStroke": "#1cc8e2",
+
+        // Active bar
+        "activityBar.background": "#00000062",
+        "activityBar.foreground": "#00ffff",
+        "activityBarBadge.background": "#00ffffb6",
+        "activityBarBadge.foreground": "#000000",
+        "sideBar.background": "#00000062",
+        "sideBar.foreground": "#b4b4b4",
+
+        // Terminal color
+        "terminal.background":"#0d1117",
+
+        // Status Bar color Night Owl
+        // "statusBar.foreground": "#27d9ed",
+
+        // Night Owl color
+        // "statusBar.border": "#011627",
+
+        // Status Bar color Material Ocean dark
+        // "statusBar.border": "#0F111A",
+        // "statusBar.background": "#0F111A",      
+        // "statusBar.foreground": "#0F111A",
+        
+        // GitHub Theme Dark
+        // "statusBar.foreground": "#79c0ff",
+        // "statusBar.border": "#0d1117",
+
+        "statusBar.border": "#080808",
+        "statusBar.background": "#080808",
+        "statusBar.foreground": "#79c0ff",
+        // "statusBar.foreground": "#0F111A",
+        // "statusBar.background" : "#ffffff",
+        // "statusBar.noFolderBackground" : "#ffffff",
+        // "statusBar.background": "#F0F0F0",
+        // "statusBar.debuggingBackground": "#F0F0F0",
+        // "statusBar.debuggingForeground": "#403f53",
+        // "statusBar.noFolderBackground": "#ffffff",
+        // "statusBar.noFolderForeground": "#ffffff",
+
+        // Tabs color
+        // "editorGroupHeader.tabsBackground": "#00000062",
+        // "editorGroupHeader.tabsBorder": "#00000062",
+        // "editorGroupHeader.border": "#00000062",
+
+        "[Night Owl]": {
+            "activityBar.background": "#000C1D",
+            "activityBar.border": "#102a44",
+            "editorGroup.border": "#102a44",
+            "sideBar.background": "#001122",
+            "sideBar.border": "#102a44",
+            "sideBar.foreground": "#8BADC1"
+          },
+
+    },
+    "phpunit.paths": {},
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt",
+        "editor.formatOnSave": false
+    },
+    "phpfmt.passes": [
+        "IndentTernaryConditions",
+        "PHPDocTypesToFunctionTypehint",
+        "ReindentAndAlignObjOps",
+        "ReplaceBooleanAndOr",
+        "SpaceBetweenMethods"
+    ],
+    "phpfmt.exclude": [
+        "GeneratePHPDoc",
+        "AutoPreincrement",
+        "SmartLnAfterCurlyOpen"
+    ],
+    "workbench.settings.applyToAllProfiles": [
+        "terminal.integrated.cursorStyle",
+        "terminal.integrated.defaultProfile.windows",
+        "terminal.integrated.tabs.defaultColor",
+        "terminal.integrated.tabs.defaultIcon"
+    ],
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiGreen",
+    "terminal.integrated.tabs.defaultIcon": "github-alt",
+    "terminal.integrated.cursorStyle": "line",
+    
+    // Set the default
+    "editor.formatOnSave": false,
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.letterSpacing": 2,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.tree.indent": 15,
+    "window.commandCenter": false,
+    "css.lint.important": "warning",
+    "scss.lint.important": "warning",
+    "debug.toolBarLocation": "docked",
+    "editor.lineNumbers": "interval",
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.stickyScroll.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "php": true
+    },
+    "editor.renderWhitespace": "none",
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairsHorizontal": true,
+    "glassit.alpha": 255, 
+    "glassit.step": 5,
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "security.promptForLocalFileProtocolHandling": false,
+    "workbench.activityBar.location": "hidden",
+    "breadcrumbs.enabled": false,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.maxColumn": 100,
+    "editor.scrollbar.horizontalScrollbarSize": 6,
+    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
+    "laravel-pint.enable": true,
+    "workbench.editor.showTabs": "none",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "window.zoomLevel": -2,
+    "editor.minimap.enabled": false,
+}
