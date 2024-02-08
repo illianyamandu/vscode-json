@@ -1,9 +1,18 @@
 {
+    "apc.font.family": "Cascadia Code",
+    "apc.listRow": {
+        "height": 25,
+    },
+    "apc.stylesheet": {
+        ".monaco-sash" :  "background-color: transparent",
+    },
+
     "editor.fontLigatures": true,
-    "editor.lineHeight": 40,
+    "editor.lineHeight": 50,
     "editor.letterSpacing": 1.5,
-    "editor.fontSize": 18,
-    "editor.fontWeight": 390,
+    // "editor.fontSize": 17.5,
+    "editor.fontSize": 16,
+    "editor.fontWeight": 395,
     // "editor.fontFamily": "JetBrains Mono",
     "editor.fontFamily": "Cascadia Code",
 
@@ -13,7 +22,9 @@
          {
            "scope": [
             "comment",
-            // "support.class",
+            "entity.name.type.namespace.php",
+            "entity.other.alias.php",
+            "entity.name.type.class.php",
             "markup.changed",
             "meta.diff.header.git",
             "meta.diff.header.from-file",
@@ -47,7 +58,8 @@
             "variable.other.object.js",
             "markup.italic.markdown",
             "markup.quote.markdown",
-            "keyword.control"
+            "keyword.control",
+            "variable.language.this.php"
            ],
            "settings": {
              "fontStyle": "italic"
@@ -122,8 +134,9 @@
               "foreground": "#FFCB6B"
             }
           },
-       ]
+       ],
      },
+
     "explorer.confirmDelete": false,
     "git.autofetch": true,
     "explorer.confirmDragAndDrop": false,
@@ -156,7 +169,16 @@
     "phpfmt.enable_auto_align": true,
     "workbench.sideBar.location": "right",
     "editor.bracketPairColorization.enabled": true,
-    "workbench.colorCustomizations": {        
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.colorCustomizations": {
+        // colors that match the background
+        "tree.indentGuidesStroke": "#080808",
+        "sideBar.background": "#080808",
+        "sideBar.border": "#080808",
+        "statusBar.border": "#080808",
+        "statusBar.background": "#080808",
+
         // Cursos Color
         "editorCursor.foreground": "#1f67ec8f",
 
@@ -165,37 +187,39 @@
         // "editor.background": "#03091E", // Azul escuro
         // "editor.background": "#011627", // Azul escuro
         // "editor.background": "#090321", // Roxo escuro
-        // "editor.background": "#021223", // Azul escuro
+        // "editor.background": "#021223", // Azul escurow
         // "editor.background": "#131827", // Azul claro
-        "editor.background": "#080808", // Black
+        "editor.background": "#080808", // Black;
 
         // Bracket colors
         "editorBracketHighlight.foreground1": "#FFD700",
+        // "editorBracketHighlight.foreground1": "#00ff62",
         "editorBracketHighlight.foreground2": "#DA70D6",
         "editorBracketHighlight.foreground3": "#179fff",
         "editorBracketHighlight.foreground4": "#19d3e8",
 
         // Inactive guide colors
         "editorBracketPairGuide.background1": "#ffd90080",
+        // "editorBracketPairGuide.background1": "#08b84c",
         "editorBracketPairGuide.background2": "#de65de80",
         "editorBracketPairGuide.background3": "#298fce80",
         "editorBracketPairGuide.background4": "#19d3e8a3",
 
         // Active guide colors
         "editorBracketPairGuide.activeBackground1": "#ffd90080",
+        // "editorBracketPairGuide.activeBackground1": "#08b84c",
         "editorBracketPairGuide.activeBackground2": "#de65de80",
         "editorBracketPairGuide.activeBackground3": "#298fce80",
         "editorBracketPairGuide.activeBackground4": "#19d3e8a3",
 
         // Tree color
-        "tree.indentGuidesStroke": "#1cc8e2",
+        // "tree.indentGuidesStroke": "#1cc8e2",
 
         // Active bar
         "activityBar.background": "#00000062",
         "activityBar.foreground": "#00ffff",
         "activityBarBadge.background": "#00ffffb6",
-        "activityBarBadge.foreground": "#000000",
-        "sideBar.background": "#00000062",
+        // "activityBarBadge.foreground": "#000000",
         "sideBar.foreground": "#b4b4b4",
 
         // Terminal color
@@ -216,8 +240,7 @@
         // "statusBar.foreground": "#79c0ff",
         // "statusBar.border": "#0d1117",
 
-        "statusBar.border": "#080808",
-        "statusBar.background": "#080808",
+
         "statusBar.foreground": "#79c0ff",
         // "statusBar.foreground": "#0F111A",
         // "statusBar.background" : "#ffffff",
@@ -284,7 +307,6 @@
     "debug.toolBarLocation": "docked",
     "editor.lineNumbers": "interval",
     "workbench.tree.renderIndentGuides": "always",
-    "editor.stickyScroll.enabled": true,
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
@@ -299,7 +321,7 @@
     "editor.guides.bracketPairsHorizontal": true,
     "glassit.alpha": 255, 
     "glassit.step": 5,
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "workbench.iconTheme": "symbols",
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "security.promptForLocalFileProtocolHandling": false,
     "workbench.activityBar.location": "hidden",
@@ -309,8 +331,11 @@
     "editor.scrollbar.horizontalScrollbarSize": 6,
     "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
     "laravel-pint.enable": true,
-    "workbench.editor.showTabs": "none",
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "window.zoomLevel": -2,
-    "editor.minimap.enabled": false,
+    "symbols.hidesExplorerArrows": false,
+    "explorer.compactFolders": false,
+    "window.zoomLevel": -1,
+    "window.customTitleBarVisibility": "windowed",
+    "workbench.editor.showTabs": "none",
+    "editor.stickyScroll.enabled": true,
 }
