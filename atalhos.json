@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "shift+alt+l",
@@ -86,5 +87,15 @@
     {
         "key": "ctrl+shift+alt+i",
         "command": "editor.action.inspectTMScopes"
+    },
+    {
+        "key": "shift+g shift+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
     }
 ]
