@@ -97,5 +97,9 @@
         "key": "f12",
         "command": "-editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "shift+g shift+p",
+        "command": "editor.action.showDefinitionPreviewHover"
     }
 ]
