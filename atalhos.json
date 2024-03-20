@@ -99,7 +99,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
-        "key": "shift+g shift+p",
+        "key": "shift+d shift+s",
         "command": "editor.action.showDefinitionPreviewHover"
     }
 ]
