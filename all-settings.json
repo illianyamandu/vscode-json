@@ -1,5 +1,5 @@
 {
-    "apc.font.family": "Cascadia Code",
+    "apc.font.family": "JetBrains Mono",
     "apc.listRow": {
         "height": 25,
     },
@@ -7,64 +7,63 @@
         ".monaco-sash" :  "background-color: transparent",
     },
 
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 50,
-    "editor.letterSpacing": 1.5,
-    // "editor.fontSize": 17.5,
-    "editor.fontSize": 16,
-    "editor.fontWeight": 395,
+    "editor.lineHeight": 50, // para tela grande
+    // "editor.lineHeight": 40, // para tela pequena
+    "editor.letterSpacing": 1.6,
+    "editor.fontSize": 16.3, 
+    "editor.fontWeight": 355,
+    // "editor.fontWeight": 450,
+    // "editor.fontLigatures": "'calt', 'ss01'",
+    "editor.fontLigatures": false,
     // "editor.fontFamily": "JetBrains Mono",
     "editor.fontFamily": "Cascadia Code",
 
     // Fonts itálicas somente para o thema GitHub Dark Default
     "editor.tokenColorCustomizations": {
         "textMateRules": [
-         {
-           "scope": [
-            "comment",
-            "entity.name.type.namespace.php",
-            "entity.other.alias.php",
-            "entity.name.type.class.php",
-            "markup.changed",
-            "meta.diff.header.git",
-            "meta.diff.header.from-file",
-            "meta.diff.header.to-file",
-            "markup.deleted.diff",
-            "markup.inserted.diff",
-            "punctuation.accessor", 
-            "keyword",
-            "storage",
-            "meta.var.expr",
-            "meta.class meta.method.declaration meta.var.expr storage.type.js",
-            "storage.type.property.js",
-            "entity.name.function",
-            "entity.other.attribute-name",
-            "keyword.operator.relational",
-            "meta.delimiter.period",
-            "meta.selector",
-            "entity.name.tag.doctype", 
-            "meta.tag.sgml.doctype",
-            "variable.other.object.property",
-            "keyword.operator.comparison",
-            "keyword.control.flow.js",
-            "keyword.control.ruby",
-            "keyword.control.loop.js",
-            "keyword.control.import.js",
-            "keyword.control.from.js",
-            "keyword.operator.instanceof.js",
-            "italic",
-            "quote",
-            "meta.tag.sgml.doctype.html",
-            "variable.other.object.js",
-            "markup.italic.markdown",
-            "markup.quote.markdown",
-            "keyword.control",
-            "variable.language.this.php"
-           ],
-           "settings": {
-             "fontStyle": "italic"
-           }
-         },
+        //  {
+        //    "scope": [
+        //     "comment",
+        //     // "support.class",
+        //     "markup.changed",
+        //     "meta.diff.header.git",
+        //     "meta.diff.header.from-file",
+        //     "meta.diff.header.to-file",
+        //     "markup.deleted.diff",
+        //     "markup.inserted.diff",
+        //     "punctuation.accessor", 
+        //     "keyword",
+        //     "storage",
+        //     "meta.var.expr",
+        //     "meta.class meta.method.declaration meta.var.expr storage.type.js",
+        //     "storage.type.property.js",
+        //     "entity.name.function",
+        //     "entity.other.attribute-name",
+        //     "keyword.operator.relational",
+        //     "meta.delimiter.period",
+        //     "meta.selector",
+        //     "entity.name.tag.doctype", 
+        //     "meta.tag.sgml.doctype",
+        //     "variable.other.object.property",
+        //     "keyword.operator.comparison",
+        //     "keyword.control.flow.js",
+        //     "keyword.control.ruby",
+        //     "keyword.control.loop.js",
+        //     "keyword.control.import.js",
+        //     "keyword.control.from.js",
+        //     "keyword.operator.instanceof.js",
+        //     "italic",
+        //     "quote",
+        //     "meta.tag.sgml.doctype.html",
+        //     "variable.other.object.js",
+        //     "markup.italic.markdown",
+        //     "markup.quote.markdown",
+        //     "keyword.control"
+        //    ],
+        //    "settings": {
+        //      "fontStyle": "italic"
+        //    }
+        //  },
          {
             "scope": [ // Marcador de variável do PHP
                 "punctuation.definition.variable.php"
@@ -134,9 +133,8 @@
               "foreground": "#FFCB6B"
             }
           },
-       ],
+       ]
      },
-
     "explorer.confirmDelete": false,
     "git.autofetch": true,
     "explorer.confirmDragAndDrop": false,
@@ -178,18 +176,32 @@
         "sideBar.border": "#080808",
         "statusBar.border": "#080808",
         "statusBar.background": "#080808",
+        "terminal.background":"#080808",
+        
+        "panelTitle.activeForeground": "#cccbc7",
+        "panelTitle.inactiveForeground": "#b5b5af",
+        "panel.border" : "#ffffff00",
+        "panel.background": "#4c494921",
 
         // Cursos Color
-        "editorCursor.foreground": "#1f67ec8f",
+        // "editorCursor.foreground": "#1f67ec8f",
+        "editorCursor.foreground": "#711fec8f",
 
         // Backgound color
         // "editor.background": "#00001F", // Azul escuro
-        // "editor.background": "#03091E", // Azul escuro
+        // "editor.background": "#03091E", // Azul escuro;
         // "editor.background": "#011627", // Azul escuro
         // "editor.background": "#090321", // Roxo escuro
-        // "editor.background": "#021223", // Azul escurow
+        // "editor.background": "#13052B", // Roxo escuro2
+        // "editor.background": "#021223", // Azul escuro
         // "editor.background": "#131827", // Azul claro
+        // "editor.background": "#151C2D", // Azul num sei
+        // "editor.background": "#060f0c", // Verde escuro
         "editor.background": "#080808", // Black;
+        // "editor.background": "#181514", // Marrom;
+        // "editor.background": "#1E1E2E", // Black-Blue
+        // "editor.background": "#1A1C24", // Black-gray
+        // "editor.background": "#0F111A", // padrão do tema
 
         // Bracket colors
         "editorBracketHighlight.foreground1": "#FFD700",
@@ -212,6 +224,13 @@
         "editorBracketPairGuide.activeBackground3": "#298fce80",
         "editorBracketPairGuide.activeBackground4": "#19d3e8a3",
 
+        "editorLineNumber.activeForeground": "#00ffd093",
+        "editor.lineHighlightBackground": "#9793931b",
+        // "editor.lineHighlightBackground": "#4c49491b",
+        // "editor.lineHighlightBorder": "#00000000",
+
+
+
         // Tree color
         // "tree.indentGuidesStroke": "#1cc8e2",
 
@@ -221,25 +240,6 @@
         "activityBarBadge.background": "#00ffffb6",
         // "activityBarBadge.foreground": "#000000",
         "sideBar.foreground": "#b4b4b4",
-
-        // Terminal color
-        "terminal.background":"#0d1117",
-
-        // Status Bar color Night Owl
-        // "statusBar.foreground": "#27d9ed",
-
-        // Night Owl color
-        // "statusBar.border": "#011627",
-
-        // Status Bar color Material Ocean dark
-        // "statusBar.border": "#0F111A",
-        // "statusBar.background": "#0F111A",      
-        // "statusBar.foreground": "#0F111A",
-        
-        // GitHub Theme Dark
-        // "statusBar.foreground": "#79c0ff",
-        // "statusBar.border": "#0d1117",
-
 
         "statusBar.foreground": "#79c0ff",
         // "statusBar.foreground": "#0F111A",
@@ -269,8 +269,9 @@
     "phpunit.paths": {},
     "[php]": {
         "editor.defaultFormatter": "kokororin.vscode-phpfmt",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
     },
+    // "php.validate.executablePath": "C:\\wamp64\\bin\\php\\php8.2.0",
     "phpfmt.passes": [
         "IndentTernaryConditions",
         "PHPDocTypesToFunctionTypehint",
@@ -281,7 +282,8 @@
     "phpfmt.exclude": [
         "GeneratePHPDoc",
         "AutoPreincrement",
-        "SmartLnAfterCurlyOpen"
+        "SmartLnAfterCurlyOpen",
+        "PHPDocTypesToFunctionTypehint"
     ],
     "workbench.settings.applyToAllProfiles": [
         "terminal.integrated.cursorStyle",
@@ -323,9 +325,6 @@
     "glassit.step": 5,
     "workbench.iconTheme": "symbols",
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
-    "security.promptForLocalFileProtocolHandling": false,
-    "workbench.activityBar.location": "hidden",
-    "breadcrumbs.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.minimap.maxColumn": 100,
     "editor.scrollbar.horizontalScrollbarSize": 6,
@@ -334,8 +333,11 @@
     "diffEditor.hideUnchangedRegions.enabled": true,
     "symbols.hidesExplorerArrows": false,
     "explorer.compactFolders": false,
-    "window.zoomLevel": -1,
     "window.customTitleBarVisibility": "windowed",
-    "workbench.editor.showTabs": "none",
     "editor.stickyScroll.enabled": true,
+    "security.promptForLocalFileProtocolHandling": false,
+    "update.mode": "manual",
+    "workbench.activityBar.location": "hidden",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.editor.showTabs": "single",
 }
