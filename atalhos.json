@@ -101,5 +101,13 @@
     {
         "key": "shift+d shift+s",
         "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+        "key": "shift+n shift+f",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+n ctrl+f",
+        "command": "explorer.newFolder"
     }
 ]
