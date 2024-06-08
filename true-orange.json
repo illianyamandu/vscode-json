@@ -1,0 +1,165 @@
+"editor.tokenColorCustomizations": {
+        "textMateRules": [
+        //  {
+        //    "scope": [
+        //     "comment",
+        //     "entity.name.type.namespace.php",
+        //     "entity.other.alias.php",
+        //     "entity.name.type.class.php",
+        //     "markup.changed",
+        //     "meta.diff.header.git",
+        //     "meta.diff.header.from-file",
+        //     "meta.diff.header.to-file",
+        //     "markup.deleted.diff",
+        //     "markup.inserted.diff",
+        //     "punctuation.accessor", 
+        //     "keyword",
+        //     "storage",
+        //     "meta.var.expr",
+        //     "meta.class meta.method.declaration meta.var.expr storage.type.js",
+        //     "storage.type.property.js",
+        //     "entity.name.function",
+        //     "entity.other.attribute-name",
+        //     "keyword.operator.relational",
+        //     "meta.delimiter.period",
+        //     "meta.selector",
+        //     "entity.name.tag.doctype", 
+        //     "meta.tag.sgml.doctype",
+        //     "variable.other.object.property",
+        //     "keyword.operator.comparison",
+        //     "keyword.control.flow.js",
+        //     "keyword.control.ruby",
+        //     "keyword.control.loop.js",
+        //     "keyword.control.import.js",
+        //     "keyword.control.from.js",
+        //     "keyword.operator.instanceof.js",
+        //     "italic",
+        //     "quote",
+        //     "meta.tag.sgml.doctype.html",
+        //     "variable.other.object.js",
+        //     "markup.italic.markdown",
+        //     "markup.quote.markdown",
+        //     "keyword.control"
+        //    ],
+        //    "settings": {
+        //      "fontStyle": "italic"
+        //    }
+        //  },
+         {
+            "scope": [ // Marcador de variável do PHP
+                "punctuation.definition.variable.php"
+            ],
+            "settings": {
+                "foreground": "#BABED8"
+            }
+          },
+          {
+            "scope": [ // if e else do php
+              "keyword.control",
+            ],
+            "settings": {
+              "foreground": "#FF8F40"
+            }
+          },
+          {
+            "scope": [ // aspas, acentos e vírgulas
+              "punctuation",
+            ],
+            "settings": {
+              "foreground": "#d6a061"
+            }
+          },
+          {
+            "scope": [ // tags html
+                "entity.name.tag"
+            ],
+            "settings": {
+              "foreground": "#e1b86a",
+            }
+          },
+          {
+            "scope": [ // Classe de suporte
+                "support.class",
+            ],
+            "settings": {
+                "foreground": "#47C2FF"
+            }
+          },
+          {
+            "scope": [ // Métodos de suporte
+                "entity.name.function",
+            ],
+            "settings": {
+               "foreground": "#FFB454"
+            }
+          },
+          {
+            "scope": [ // Métodos de suporte
+                "meta.function entity.name.function",
+            ],
+            "settings": {
+               "foreground": "#FFB454"
+            }
+          },
+          {
+            "scope": [ // Textos
+                "string",
+            ],
+            "settings": {
+              "foreground": "#aed368"
+            }
+          },
+          {
+            "scope": [ // Sinal de igualdade
+                "keyword",
+            ],
+            "settings": {
+              "foreground": "#F29668"
+            }
+          },
+          {
+            "scope": [ // Funções
+                "storage.type",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#FF8F40"
+            }
+          },
+          {
+            "scope": [ // Comentários doc php
+                "keyword.other"
+            ],
+            "settings": {
+            //   "foreground": "#FFCB6B"
+              "foreground": "#FF8F40"
+            }
+          },
+          {
+            "scope": [ // Class alias 
+                "entity.name.type.namespace.php",
+                "entity.other.alias.php"
+            ],
+            "settings": {
+              "foreground": "#79caea"
+            }
+          },
+          {
+            "scope": [ // Class name
+                "entity.name.type.class.php",
+                "entity.other.inherited-class.php",
+            ],
+            "settings": {
+              "foreground": "#47C2FF"
+            }
+          },
+          {
+            "scope": [ // funções do php
+                "support.function"
+            ],
+            "settings": {
+              "foreground": "#F07178"
+            }
+          },
+       ],
+     },
