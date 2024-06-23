@@ -18,7 +18,7 @@
                     "meta.var.expr",
                     "meta.class meta.method.declaration meta.var.expr storage.type.js",
                     "storage.type.property.js",
-                    "support.class.php", //nome da classe
+                    // "support.class.php", //nome da classe
                     // "entity.name.function", // método das classes
                     "entity.other.attribute-name",
                     "keyword.operator.relational",
@@ -44,8 +44,8 @@
                     "variable.language.this.php",
                 ],
                 "settings": {
-                    // "fontStyle": "italic"
-                    "fontStyle": "",
+                    "fontStyle": "italic"
+                    // "fontStyle": "",
                 }
             },
             {
@@ -53,7 +53,8 @@
                     "keyword.control.return.php"
                 ],
                 "settings": {
-                    "fontStyle": ""
+                    "fontStyle": "",
+                    "foreground": "#db6474"
                 }
             },
             {
@@ -63,7 +64,7 @@
                     "keyword.operator.class.php"
                 ],
                 "settings": {
-                    "foreground": "#cc7581"
+                    "foreground": "#db6474"
                 }
             },
             {
@@ -72,7 +73,7 @@
                     "variable.language.this.php"
                 ],
                 "settings": {
-                    "foreground": "#C76482"
+                    "foreground": "#7FDBCA"
                 }
             },
             {
@@ -121,7 +122,7 @@
                     "keyword.other.type.php",
                 ],
                 "settings": {
-                    "foreground": "#C76482"
+                    "foreground": "#db6464"
                 }
             },
             {
@@ -245,7 +246,7 @@
                     "support.function"
                 ],
                 "settings": {
-                    "foreground": "#a171df"
+                    "foreground": "#31c0d3"
                 }
             },
         ],
