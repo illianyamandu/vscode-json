@@ -35,12 +35,12 @@ VSCode-JSON
 ├── all-settings.json           # Todas as configurações do VSCode
 ├── pint.json                   # Configurações de formatação (Pint, etc.)
 └── README.md                   # Este arquivo
+```
 
 ---
 
 ### **4. Temas Disponíveis**
 
-```markdown
 ## 🎨 Temas Disponíveis
 
 ### 🌑 Temas Escuros
@@ -65,12 +65,10 @@ O arquivo `binds.json` contém atalhos personalizados para produtividade. Basta 
 ### Configurações Gerais
 O arquivo `all-settings.json` inclui todas as minhas configurações personalizadas. Use-o como referência ou copie diretamente para o seu ambiente.
 
-
 ---
 
 ### **7. Contribuições**
 
-```markdown
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Se você tem sugestões ou melhorias, abra um _pull request_ ou _issue_.
