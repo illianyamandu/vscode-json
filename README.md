@@ -67,7 +67,7 @@ The `all-settings.json` file includes all my custom configurations. Use it as a 
 
 ---
 
-### **7. Welcome**
+### **5. Welcome**
 
 ## 🤝 Contributions
 
