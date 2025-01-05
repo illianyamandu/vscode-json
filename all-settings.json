@@ -1,12 +1,12 @@
 {
-    "apc.font.family": "JetBrains Mono",
+    "apc.font.family": "Cascadia Code",
     "apc.listRow": {
-        "height": 25,
+        "height": 30,
+        "fontSize": 13
     },
-
     "apc.stylesheet": {
         ".monaco-sash": "background-color: transparent",
-        ".quick-input-widget": "transform: translateY(-50%) !important; top: 50% !important; box-shadow: 0px 0px 8px 12px rgba(115, 43, 245, .45) !important; padding: 10px 10px 18px 10px !important; border-radius: 20px !important;",
+        ".quick-input-widget": "transform: translateY(-50%) !important; top: 50% !important; box-shadow: 0px 0px 8px 12px rgba(173, 215, 255, .45) !important; padding: 10px 10px 18px 10px !important; border-radius: 20px !important;",
         ".monaco-list-rows": "background: transparent !important",
         ".monaco-list-row:hover": "background: rgba(0, 0, 0, .2) !important;",
         ".notifications-toasts .monaco-list-row:hover": "background: none !important;",
@@ -15,12 +15,17 @@
         ".monaco-inputbox input::placeholder": "color: rgba(255, 255, 255, .3) !important;",
         ".command-center-center": "width: auto !important;"
     },
+    "vscode_custom_css.imports": [
+        "file:///C:/Users/4Selet/.vscode/vscode-custom/style.css",
+        "file:///C:/Users/4Selet/.vscode/vscode-custom/script.js"
+    ],
     // "editor.lineHeight": 45, // para tela grande
     "editor.lineHeight": 40, // para tela pequena    
     "editor.letterSpacing": 1.6,
     // "editor.letterSpacing": 2,
     // "editor.fontSize": 12.2,
-    "editor.fontSize": 12.5,
+    // "editor.fontSize": 12.5,
+    "editor.fontSize": 13.5,
     // "editor.fontSize": 14,
     // "editor.fontSize": 14.5, 
     "editor.fontWeight": 375,
@@ -29,11 +34,11 @@
     "editor.fontLigatures": "'calt', 'ss01'",
     // "editor.fontLigatures": true,
     // "editor.fontFamily": "Lotion",
-    "editor.fontFamily": "Cascadia Code",
+    // "editor.fontFamily": "Cascadia Code",
     // "editor.fontFamily": "JetBrains Mono",
     // "editor.fontFamily": "Inconsolata",
-    // "editor.fontFamily": "Fantasque Sans Mono",
-    // Fonts itálicas somente para o thema GitHub Dark Default
+    "editor.fontFamily": "Fantasque Sans Mono",
+    // Fonts itálicas somente para o thema GitHub Dark Default    
     "editor.tokenColorCustomizations": {
         "textMateRules": [
          {
@@ -54,7 +59,7 @@
             "meta.var.expr",
             "meta.class meta.method.declaration meta.var.expr storage.type.js",
             "storage.type.property.js",
-            "support.class.php", //nome da classe
+            // "support.class.php", //nome da classe
             // "entity.name.function", // método das classes
             "entity.other.attribute-name",
             "keyword.operator.relational",
@@ -80,10 +85,18 @@
             "variable.language.this.php",
            ],
            "settings": {
-             "fontStyle": "italic"
-            //  "fontStyle": ""
+            //  "fontStyle": "italic"
+             "fontStyle": ""
            }
          },
+         {
+            "scope": [ 
+                "keyword.other.DML.sql"
+            ],
+            "settings": {
+                "foreground": "#E4F0FBD0"
+            }
+          },
         //  {
         //     "scope": [ 
         //         "keyword.control.return.php"
@@ -92,15 +105,15 @@
         //         "fontStyle": ""
         //     }
         //   },
-         {
-            "scope": [ 
-                "keyword.operator.logical.php", // operadores lógicos
-                "keyword.operator.comparison.php" // operadores de comparação
-            ],
-            "settings": {
-                "foreground": "#f0c6fa"
-            }
-          },
+        //  {
+        //     "scope": [ 
+        //         "keyword.operator.logical.php", // operadores lógicos
+        //         "keyword.operator.comparison.php" // operadores de comparação
+        //     ],
+        //     "settings": {
+        //         "foreground": "#f0c6fa"
+        //     }
+        //   },
         //  {
         //     "scope": [ 
         //         "variable.language.this.php punctuation.definition.variable.php",
@@ -143,38 +156,38 @@
         //         "foreground": "#9ECBFF"
         //     }
         //   },
-         {
-            "scope": [ // Marcador de variável do PHP
-                "punctuation.definition.variable.php"
-            ],
-            "settings": {
-                "foreground": "#e4b6ef"
-            }
-          },
-         {
-            "scope": [ // setinha do php '->'
-                "keyword.operator.class.php"
-            ],
-            "settings": {
-                "foreground": "#edb6ef"
-            }
-          },
-         {
-            "scope": [ // ternário do php
-                "keyword.operator.ternary.php"
-            ],
-            "settings": {
-                "foreground": "#edb6ef"
-            }
-          },
-         {
-            "scope": [ // null coalescing do php '??'
-                "keyword.operator.null-coalescing.php"
-            ],
-            "settings": {
-                "foreground": "#e8b6ef"
-            }
-          },
+        //  {
+        //     "scope": [ // Marcador de variável do PHP
+        //         "punctuation.definition.variable.php"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#e4b6ef"
+        //     }
+        //   },
+        //  {
+        //     "scope": [ // setinha do php '->'
+        //         "keyword.operator.class.php"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#edb6ef"
+        //     }
+        //   },
+        //  {
+        //     "scope": [ // ternário do php
+        //         "keyword.operator.ternary.php"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#edb6ef"
+        //     }
+        //   },
+        //  {
+        //     "scope": [ // null coalescing do php '??'
+        //         "keyword.operator.null-coalescing.php"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#e8b6ef"
+        //     }
+        //   },
         //   {
         //     "scope": [ // tipagem do php
         //       "keyword.other.type.php",
@@ -183,14 +196,14 @@
         //       "foreground": "#C76482"
         //     }
         //   },
-          {
-            "scope": [ // if e else do php
-              "keyword.control",
-            ],
-            "settings": {
-              "foreground": "#ff89f9"
-            }
-          },
+        //   {
+        //     "scope": [ // if e else do php
+        //       "keyword.control",
+        //     ],
+        //     "settings": {
+        //       "foreground": "#ff89f9"
+        //     }
+        //   },
         //   {
         //     "scope": [ // aspas, acentos e vírgulas
         //       "punctuation",
@@ -199,23 +212,23 @@
         //       "foreground": "#73B8CF"
         //     }
         //   },
-          {
-            "scope": [ // tags html
-                "entity.name.tag"
-            ],
-            "settings": {
-              "foreground": "#d782ff",
-            }
-          },
-          {
-            "scope": [ // caracteres de abertura e fechamento de tags
-                "punctuation.definition.tag.begin.html",
-                "punctuation.definition.tag.end.html"
-            ],
-            "settings": {
-              "foreground": "#ff89f9",
-            }
-          },
+        //   {
+        //     "scope": [ // tags html
+        //         "entity.name.tag"
+        //     ],
+        //     "settings": {
+        //       "foreground": "#d782ff",
+        //     }
+        //   },
+        //   {
+        //     "scope": [ // caracteres de abertura e fechamento de tags
+        //         "punctuation.definition.tag.begin.html",
+        //         "punctuation.definition.tag.end.html"
+        //     ],
+        //     "settings": {
+        //       "foreground": "#ff89f9",
+        //     }
+        //   },
         //   {
         //     "scope": [ // Classe de suporte
         //         "support.class",
@@ -232,30 +245,30 @@
         //       "foreground": "#FFCB6B"
         //     }
         //   },
-          {
-            "scope": [ // Métodos de suporte
-                "entity.name.function.php",
-            ],
-            "settings": {
-              "foreground": "#89d0ff"
-            }
-          },
-          {
-            "scope": [ // Textos
-                "string",
-            ],
-            "settings": {
-              "foreground": "#57b5d1"
-            }
-          },
-          {
-            "scope": [ // Sinal de igualdade
-                "keyword",
-            ],
-            "settings": {
-              "foreground": "#f6c6fa"
-            }
-          },
+        //   {
+        //     "scope": [ // Métodos de suporte
+        //         "entity.name.function.php",
+        //     ],
+        //     "settings": {
+        //       "foreground": "#89d0ff"
+        //     }
+        //   },
+        //   {
+        //     "scope": [ // Textos
+        //         "string",
+        //     ],
+        //     "settings": {
+        //       "foreground": "#57b5d1"
+        //     }
+        //   },
+        //   {
+        //     "scope": [ // Sinal de igualdade
+        //         "keyword",
+        //     ],
+        //     "settings": {
+        //       "foreground": "#f6c6fa"
+        //     }
+        //   },
         //   {
         //     "scope": [
         //       "constant.language",
@@ -272,15 +285,15 @@
         //       "foreground": "#CD835D"
         //     }
         //   },
-          {
-            "scope": [ // Funções
-                "storage.type",
-                "storage.modifier"
-            ],
-            "settings": {
-                "foreground": "#ff89f9"
-            }
-          },
+        //   {
+        //     "scope": [ // Funções
+        //         "storage.type",
+        //         "storage.modifier"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#ff89f9"
+        //     }
+        //   },
         //   {
         //     "scope": [ // Comentários doc php
         //         "keyword.other"
@@ -308,14 +321,14 @@
         //       "foreground": "#B6C3EF"
         //     }
         //   },
-          {
-            "scope": [ // funções do php
-                "support.function"
-            ],
-            "settings": {
-              "foreground": "#a1ff6b"
-            }
-          },
+        //   {
+        //     "scope": [ // funções do php
+        //         "support.function"
+        //     ],
+        //     "settings": {
+        //       "foreground": "#a1ff6b"
+        //     }
+        //   },
        ],
      },
     "explorer.confirmDelete": false,
@@ -328,12 +341,22 @@
     "workbench.startupEditor": "none",
     // Remove .fvm files from search
     "search.exclude": {
-        "**/.fvm": true
+        "**/.fvm": true,
+        "**/node_modules": true,
+        "**/dist": true
     },
     // Remove from file watching
     "files.watcherExclude": {
-        "**/.fvm": true
+        "**/.fvm": true,
+        "**/node_modules/**": true,
+        "**/dist/**": true
     },
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/.vscode": true,
+    },      
     "explorer.fileNesting.enabled": true,
     "editor.inlineSuggest.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
@@ -352,16 +375,27 @@
     "editor.hideCursorInOverviewRuler": true,
     "workbench.colorCustomizations": {
         // colors that match the background
-        // ONLY FOR DARK THEME
-        "tree.indentGuidesStroke": "#011627",
-        "sideBar.background": "#011627",
-        "sideBar.border": "#011627",
-        "statusBar.border": "#011627",
-        "statusBar.background": "#011627",
-        "terminal.background": "#011627",
-        "tab.activeBackground": "#011627",
-        "editorGroupHeader.noTabsBackground": "#011627",
-        "editorGroupHeader.tabsBackground": "#011627",
+        "tree.indentGuidesStroke": "#080808",
+        "terminal.background": "#080808",
+        "tab.activeBackground": "#080808",
+        "tab.unfocusedInactiveBackground": "#080808",
+        "tab.selectedBackground": "#080808",
+        "tab.inactiveBackground": "#080808",
+        "tab.unfocusedActiveBackground": "#080808",
+        "editorGroupHeader.noTabsBackground": "#080808",
+        "editorGroupHeader.tabsBackground": "#080808",
+        "editorGutter.background": "#080808",
+        "sideBarSectionHeader.background": "#080808",
+        
+        // STATUS BAR
+        "statusBar.border": "#131212",
+        "statusBar.background": "#131212",
+
+        // SIDEBAR
+        "sideBar.background": "#131212",
+        "sideBar.border": "#131212",
+
+        // "backgro"
 
 
 
@@ -373,20 +407,20 @@
         //"panel.background": "#4c494921",
 
         // Cursos Color
-        // "editorCursor.foreground": "#1f67ec8f",
-        "editorCursor.foreground": "#711fec8f",
+        "editorCursor.foreground": "#1f67ec8f",
+        // "editorCursor.foreground": "#711fec8f",
 
         // Backgound color
         // "editor.background": "#00001F", // Azul escuro
         // "editor.background": "#03091E", // Azul escuro
-        "editor.background": "#011627", // Azul escuro
+        // "editor.background": "#011627", // Azul escuro
         // "editor.background": "#090321", // Roxo escuro
-        // "editor.background": "#13052B", // Roxo escuro2
+        // "editor.background": "#160631", // Roxo escuro2
         // "editor.background": "#021223", // Azul escuro
         // "editor.background": "#131827", // Azul claro
         // "editor.background": "#151C2D", // Azul num sei
-        // "editor.background": "#060f0c", // Verde escuro
-        // "editor.background": "#080808", // Black;
+        // "editor.background": "#060f0c", // Verde escur;o
+        "editor.background": "#080808", // Black;
         // "editor.background": "#181514", // Marrom;;
         // "editor.background": "#1E1E2E", // Black-Blue
         // "editor.background": "#1A1C24", // Black-gray
@@ -395,6 +429,15 @@
         // "editor.background": "#0F111A", // padrão do tema
         // "editor.background": "#141A24", // padrão do tema
         // "editor.background": "#1d1d20", // cinza
+        // "editor.background": "#1A1C1E", // cinza escuro
+        // "editor.background": "#141416", // cinza mais escuro
+        // "editor.background": "#1B1E28", // poimandres
+
+        // <========= CLAROS =========>
+        // "editor.background": "#dddbdb",
+        // "editor.background": "#dce0e2",
+        // "editor.background": "#FCF5E2",
+        // "editor.background": "#EDE8D4",
         
         // Bracket colors
         //"editorBracketHighlight.foreground1": "#FFD700",
@@ -418,21 +461,29 @@
         "editorBracketPairGuide.activeBackground3": "#298fce80",
         "editorBracketPairGuide.activeBackground4": "#19d3e8a3",
         "editorLineNumber.activeForeground": "#00ffd093",
-        "editor.lineHighlightBackground": "#9793931b",
         // "editor.lineHighlightBackground": "#4c49491b",
-        // "editor.lineHighlightBorder": "#00000000",
+        //  "editor.lineHighlightBorder": "#00000000",
         
         // Tree color
         // "tree.indentGuidesStroke": "#1cc8e2",
         
         // Active bar
+        // "activityBar.border": "#2e3135",
         "activityBar.background": "#00000062",
+
+        // "editor.lineHighlightBackground": "#4c49491b",
+        "editor.lineHighlightBackground": "#011627",
+        // "editorWidget.background": "#20232c",
+        "editorWidget.background": "#011627",
+
         "activityBar.foreground": "#00ffff",
+        "activityBar.activeBorder": "#00ffffb6",
         "activityBarBadge.background": "#00ffffb6",
         // "activityBarBadge.foreground": "#000000",
         "sideBar.foreground": "#b4b4b4",
 
-        "statusBar.foreground": "#79c0ff", // dark theme
+        "statusBar.foreground": "#ADD7FF", // poimandres
+        // "statusBar.foreground": "#79c0ff", // dark theme
         // "statusBar.foreground": "#0F111A",
         // "statusBar.background" : "#ffffff",
         // "statusBar.noFolderBackground" : "#ffffff",
@@ -451,7 +502,7 @@
     "phpunit.paths": {},
     "[php]": {
         "editor.defaultFormatter": "kokororin.vscode-phpfmt",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
     },
     "emeraldwalk.runonsave": {
         "commands": [
@@ -513,10 +564,11 @@
     "editor.guides.bracketPairsHorizontal": true,
     "glassit.alpha": 255,
     "glassit.step": 5,
-    "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Copilot Theme - Higher Contrast",
+    "workbench.colorTheme": "poimandres",
     "editor.minimap.showSlider": "always",
     "editor.minimap.maxColumn": 100,
+    "editor.minimap.renderCharacters": true,
+    "editor.minimap.autohide": true,
     "editor.scrollbar.horizontalScrollbarSize": 6,
     "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
     "laravel-pint.enable": true,
@@ -530,5 +582,10 @@
     "apc.imports": [
         "file:///c:/Users/4Selet/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
     ],
-
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.productIconTheme": "fluent-icons",
+    "breadcrumbs.enabled": false,
+    "zenMode.showTabs": "single",
+    "Laravel.showErrorPopups": false,
+    "workbench.activityBar.location": "hidden",
 }
