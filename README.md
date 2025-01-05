@@ -1,25 +1,25 @@
 # VSCode Configurations and Themes 🎨
 
-Este repositório foi criado para armazenar todas as minhas configurações personalizadas do **Visual Studio Code**, incluindo temas exclusivos organizados por estilos (claros e escuros) e modelos de configuração. Ideal para quem busca personalizar e otimizar o ambiente de desenvolvimento.
+This repository was created to store all my custom **Visual Studio Code** configurations, including exclusive themes organized by dark and light styles, as well as configuration templates. Perfect for anyone looking to personalize and optimize their development environment.
 
 ---
 
-## 🌟 Visão Geral
+## 🌟 Overview
 
-- **Configurações personalizadas:** Ajuste o VSCode para atender suas necessidades com configurações práticas e otimizadas.
-- **Temas organizados:** Temas exclusivos organizados em estilos escuros e claros.
-- **Modelos e configurações base:** Arquivos JSON prontos para uso e inspiração.
+- **Custom configurations:** Adjust VSCode to meet your needs with practical and optimized settings.
+- **Organized themes:** Exclusive themes organized by dark and light styles.
+- **Base templates and settings:** Ready-to-use JSON files for inspiration and customization.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Repository Structure
 
 ```plaintext
 VSCode-JSON
 ├── keybinds/
-│   └── binds.json              # Atalhos de teclado personalizados
+│   └── binds.json              # Custom keyboard shortcuts
 ├── themes/
-│   ├── darks/                  # Temas escuros
+│   ├── darks/                  # Dark themes
 │   │   ├── github-theme.json
 │   │   ├── is-orange-theme.json
 │   │   ├── lazy-blue-theme.json
@@ -28,47 +28,53 @@ VSCode-JSON
 │   │   ├── ocean-red-theme-colors.json
 │   │   ├── ray-theme.json
 │   │   └── true-orange.json
-│   ├── lights/                 # Temas claros
-│   │   └── (futuramente, temas claros aqui)
+│   ├── lights/                 # Light themes
+│   │   └── (future light themes go here)
 │   └── templates/
-│       └── base-theme-configs.json  # Modelos base para criação de temas
-├── all-settings.json           # Todas as configurações do VSCode
-├── pint.json                   # Configurações de formatação (Pint, etc.)
-└── README.md                   # Este arquivo
+│       └── base-theme-configs.json  # Base templates for creating themes
+├── all-settings.json           # All VSCode settings
+├── pint.json                   # Formatting settings (Pint, etc.)
+└── README.md                   # This file
 ```
 
 ---
 
-### **4. Temas Disponíveis**
+### **4. Available Themes**
 
-## 🎨 Temas Disponíveis
+## 🎨 Available Themes
 
-### 🌑 Temas Escuros
-1. **GitHub Theme:** Um tema inspirado no editor do GitHub, ideal para simplicidade e contraste.
-2. **Is Orange:** Tema vibrante com tons alaranjados.
-3. **Lazy Blue:** Azul relaxante para longas sessões de codificação.
-4. **Ocean Themes:** Coleção de temas com variações em azul, roxo e vermelho.
-5. **Ray Theme:** Uma abordagem única e visualmente produtiva.
-6. **True Orange:** Um tema alaranjado otimizado para alta legibilidade.
+### 🌑 Dark Themes
+1. **GitHub Theme:** A theme inspired by the GitHub editor, perfect for simplicity and contrast.
+2. **Is Orange:** A vibrant theme with orange tones.
+3. **Lazy Blue:** A relaxing blue theme for long coding sessions.
+4. **Ocean Themes:** A collection of themes with variations in blue, purple, and red.
+5. **Ray Theme:** A unique and visually productive approach.
+6. **True Orange:** An orange-optimized theme for high readability.
 
-### ☀️ Temas Claros
-- **(Futuramente, temas claros serão adicionados aqui.)**
+### ☀️ Light Themes
+- **(Future light themes will be added here.)**
 
-### 🛠️ Modelos
-- O arquivo `base-theme-configs.json` serve como ponto de partida para quem deseja criar seus próprios temas.
+### 🛠️ Templates
+- The file `base-theme-configs.json` serves as a starting point for those who want to create their own themes.
 
-## ⚙️ Configurações
+## ⚙️ Configurations
 
 ### Keybinds
-O arquivo `binds.json` contém atalhos personalizados para produtividade. Basta copiá-lo para o diretório de configurações do VSCode.
+The `binds.json` file contains custom shortcuts for increased productivity. Simply copy it to your VSCode settings directory.
 
-### Configurações Gerais
-O arquivo `all-settings.json` inclui todas as minhas configurações personalizadas. Use-o como referência ou copie diretamente para o seu ambiente.
+### General Settings
+The `all-settings.json` file includes all my custom configurations. Use it as a reference or copy it directly to your environment.
 
 ---
 
-### **7. Contribuições**
+### **7. Welcome**
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Contribuições são bem-vindas! Se você tem sugestões ou melhorias, abra um _pull request_ ou _issue_.
+Contributions are welcome! If you have suggestions or improvements, open a pull request or issue.
+
+## ⭐ Acknowledgments
+
+If you liked this repository, leave a star 🌟 and share it with your friends!
+
+
