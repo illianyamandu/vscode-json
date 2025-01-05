@@ -1,0 +1,143 @@
+/* Define a fonte geral para a interface */
+.title-label, .label-name, .menubar-menu-title, .window-title, .statusbar-item-label {
+    font-family: "Cascadia Code", monospace !important;
+}
+
+/* ------------ Activity Bar ------------ */
+.monaco-workbench .activitybar>.content {
+    justify-content: center;
+}
+
+.monaco-workbench .activitybar>.content>.composite-bar {
+    margin-bottom: inherit;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-label.codicon {
+    border-radius: 12px !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-item.checked .active-item-indicator:before {
+    border-left-color: transparent !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-item {
+    background: var(--vscode-editor-lineHighlightBackground) !important;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    width: 36px;
+    height: 36px;
+    margin-left: 4px;
+}
+
+div#workbench\.parts\.activitybar {
+    background-color: var(--vscode-editorWidget-background) !important;
+}
+
+li.action-item.icon {
+    border: 2px solid transparent;
+}
+
+li.action-item.icon:hover {
+    border: 2px solid var(--vscode-icon-foreground);
+}
+
+li.action-item.icon.checked:hover .codicon:before {
+    color: var(--vscode-activityBar-activeBorder) !important;
+}
+
+li.action-item.icon.checked {
+    border: 2px solid var(--vscode-activityBar-activeBorder);
+}
+
+li.action-item.icon.checked a.action-label.codicon {
+    color: var(--vscode-activityBar-activeBorder) !important;
+    border-radius: 12px !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-label.codicon,
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-label:not(.codicon) {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-label:not(.codicon) {
+    padding: 0;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-label:not(.codicon):hover {
+    background-color: var(--vscode-input-foreground) !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-item:focus .active-item-indicator:before {
+    border-left-color: transparent !important;
+}
+
+.monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .badge .badge-content {
+    position: absolute;
+    top: 16px;
+    right: 4px;
+}
+
+.monaco-sash {
+    background-color: transparent;
+}
+
+.quick-input-widget {
+    transform: translateY(-50%) !important;
+    top: 50% !important;
+    box-shadow: 0px 0px 8px 12px rgba(173, 215, 255, 0.45) !important;
+    padding: 10px 10px 18px 10px !important;
+    border-radius: 20px !important;
+}
+
+.monaco-list-rows {
+    background: transparent !important;
+}
+
+.monaco-list-row:hover {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.notifications-toasts .monaco-list-row:hover {
+    background: none !important;
+}
+
+.quick-input-filter .monaco-inputbox {
+    border-radius: 12px !important;
+    padding: 8px !important;
+    border: none !important;
+    background-color: rgba(34, 34, 34, 0.40) !important;
+    font-family: 'JetBrains Mono' !important;
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+}
+
+#command-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+}
+
+.monaco-inputbox input::placeholder {
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.command-center-center {
+    width: auto !important;
+}
+
+.editor-group-watermark {
+    max-width: none !important;
+}
+
+.letterpress {
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23292c38' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' stroke='%23292c38'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3Elaravel%3C/title%3E%3Cpath d='M13.143 23.585l10.46-5.97-4.752-2.736-10.453 6.019zM24.084 11.374l-4.757-2.736v5.417l4.758 2.737zM24.559 5.078l-4.756 2.736 4.756 2.736 4.755-2.737zM9.911 18.928l2.76-1.589v-11.934l-4.758 2.738v11.934zM7.437 1.846l-4.756 2.737 4.756 2.737 4.753-2.737zM2.204 5.406v18.452l10.464 6.022v-5.471l-5.472-3.096c-0.018-0.013-0.032-0.027-0.051-0.039-0.014-0.013-0.030-0.023-0.044-0.034l-0.001-0.003c-0.015-0.015-0.028-0.031-0.039-0.049l-0.001-0.001c-0.014-0.013-0.025-0.028-0.035-0.045l-0.001-0.001h-0.003c-0.008-0.015-0.016-0.035-0.024-0.055l-0.001-0.004c-0.007-0.015-0.015-0.032-0.022-0.051l-0.001-0.003c-0.004-0.020-0.008-0.045-0.010-0.070l-0-0.002c-0.003-0.015-0.006-0.033-0.008-0.051l-0-0.001v-12.759l-2.757-1.59zM24.085 23.857v-5.422l-10.464 5.974v5.47zM29.789 14.055v-5.417l-4.756 2.737v5.417zM30.725 7.69c0.011 0.038 0.018 0.081 0.018 0.126v0 6.513c-0 0.176-0.095 0.329-0.237 0.411l-0.002 0.001-5.468 3.149v6.241c-0 0.175-0.095 0.328-0.236 0.411l-0.002 0.001-11.416 6.57c-0.024 0.013-0.052 0.025-0.081 0.033l-0.003 0.001-0.030 0.013c-0.036 0.011-0.078 0.017-0.121 0.017s-0.085-0.006-0.125-0.018l0.003 0.001c-0.015-0.004-0.027-0.009-0.039-0.016l0.001 0.001c-0.031-0.011-0.057-0.021-0.082-0.033l0.004 0.002-11.413-6.57c-0.144-0.084-0.239-0.237-0.239-0.412v0-19.548c0-0.044 0.007-0.087 0.019-0.127l-0.001 0.003c0.004-0.015 0.013-0.025 0.018-0.040 0.009-0.029 0.019-0.053 0.030-0.076l-0.001 0.003c0.008-0.016 0.018-0.030 0.029-0.042l-0 0 0.042-0.057 0.047-0.034c0.018-0.015 0.034-0.030 0.052-0.043h0.001l5.708-3.285c0.068-0.040 0.15-0.064 0.237-0.064s0.169 0.024 0.239 0.065l-0.002-0.001 5.71 3.285c0.019 0.013 0.035 0.027 0.051 0.042l-0-0 0.048 0.034c0.016 0.018 0.025 0.038 0.042 0.057 0.012 0.012 0.022 0.026 0.031 0.041l0.001 0.001c0.010 0.020 0.020 0.044 0.029 0.069l0.001 0.004 0.016 0.040c0.011 0.035 0.018 0.076 0.018 0.118 0 0.002 0 0.004-0 0.006v-0 12.208l4.756-2.737v-6.241c0-0.001 0-0.002 0-0.002 0-0.043 0.006-0.085 0.017-0.125l-0.001 0.003c0.004-0.013 0.013-0.025 0.016-0.040 0.010-0.030 0.020-0.054 0.032-0.078l-0.002 0.004c0.009-0.015 0.023-0.025 0.032-0.042 0.015-0.019 0.027-0.038 0.042-0.054 0.014-0.013 0.029-0.025 0.045-0.035l0.001-0.001c0.018-0.013 0.033-0.029 0.052-0.040h0.001l5.708-3.286c0.068-0.040 0.15-0.064 0.237-0.064s0.169 0.024 0.239 0.065l-0.002-0.001 5.708 3.286c0.020 0.013 0.034 0.027 0.053 0.039 0.015 0.013 0.032 0.023 0.046 0.035 0.016 0.018 0.028 0.038 0.043 0.056 0.011 0.012 0.021 0.026 0.030 0.040l0.001 0.001c0.012 0.022 0.022 0.047 0.030 0.073l0.001 0.003c0.008 0.012 0.014 0.025 0.019 0.039l0 0.001z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    width: 20% !important;
+}
