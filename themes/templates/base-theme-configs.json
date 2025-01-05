@@ -1,0 +1,261 @@
+[
+  {
+    // Palavras-chave de Manipulação de Dados (DML) no SQL
+    "scope": [
+      "keyword.other.DML.sql"
+    ],
+    "settings": {
+      "foreground": "#E4F0FBD0"
+    }
+  },
+  {
+    // Operadores lógicos e de comparação no PHP
+    "scope": [
+      "keyword.operator.logical.php", // Operadores lógicos (&&, ||, !, etc.)
+      "keyword.operator.comparison.php" // Operadores de comparação (==, !=, <, >, etc.)
+    ],
+    "settings": {
+      "foreground": "#f0c6fa"
+    }
+  },
+  {
+    // Variável "this" e sua pontuação no PHP
+    "scope": [
+      "variable.language.this.php punctuation.definition.variable.php",
+      "variable.language.this.php"
+    ],
+    "settings": {
+      "foreground": "#C76482"
+    }
+  },
+  {
+    // Variáveis comuns no PHP
+    "scope": [
+      "variable.other.php"
+    ],
+    "settings": {
+      "foreground": "#B6C3EF"
+    }
+  },
+  {
+    // Parâmetros de funções no PHP
+    "scope": [
+      "meta.function.parameter variable.other.php",
+      "meta.function.parameter punctuation.definition.variable.php"
+    ],
+    "settings": {
+      "foreground": "#EAB47D"
+    }
+  },
+  {
+    // Propriedades de classes no PHP
+    "scope": [
+      "variable.other.property.php"
+    ],
+    "settings": {
+      "foreground": "#7dbee3"
+    }
+  },
+  {
+    // Tags de abertura e fechamento do PHP
+    "scope": [
+      "punctuation.section.embedded.begin.php"
+    ],
+    "settings": {
+      "foreground": "#9ECBFF"
+    }
+  },
+  {
+    // Marcadores de variável no PHP (como "$")
+    "scope": [
+      "punctuation.definition.variable.php"
+    ],
+    "settings": {
+      "foreground": "#e4b6ef"
+    }
+  },
+  {
+    // Operadores de classe no PHP (como "->")
+    "scope": [
+      "keyword.operator.class.php"
+    ],
+    "settings": {
+      "foreground": "#edb6ef"
+    }
+  },
+  {
+    // Operadores ternários no PHP (como "? :")
+    "scope": [
+      "keyword.operator.ternary.php"
+    ],
+    "settings": {
+      "foreground": "#edb6ef"
+    }
+  },
+  {
+    // Tipos no PHP (como "int", "string")
+    "scope": [
+      "keyword.other.type.php"
+    ],
+    "settings": {
+      "foreground": "#C76482"
+    }
+  {
+    // Operadores de coalescência nula no PHP (como "??")
+    "scope": [
+      "keyword.operator.null-coalescing.php"
+    ],
+    "settings": {
+      "foreground": "#e8b6ef"
+    }
+  },
+  },
+  {
+    // Estruturas de controle no PHP (como "if", "else")
+    "scope": [
+      "keyword.control"
+    ],
+    "settings": {
+      "foreground": "#ff89f9"
+    }
+  },
+  {
+    // Pontuações gerais (como aspas, vírgulas)
+    "scope": [
+      "punctuation"
+    ],
+    "settings": {
+      "foreground": "#73B8CF"
+    }
+  },
+  {
+    // Tags HTML
+    "scope": [
+      "entity.name.tag"
+    ],
+    "settings": {
+      "foreground": "#d782ff"
+    }
+  },
+  {
+      "punctuation.definition.tag.begin.html",
+      "punctuation.definition.tag.end.html"
+    ],
+    // Caracteres de abertura e fechamento de tags HTML
+    "scope": [
+    "settings": {
+      "foreground": "#ff89f9"
+    }
+  },
+  {
+    // Classes de suporte
+    "scope": [
+      "support.class"
+    ],
+    "settings": {
+      "foreground": "#31B6D3"
+    }
+  },
+  {
+    // Nomes de funções em geral
+    "scope": [
+      "entity.name.function"
+    ],
+    "settings": {
+      "foreground": "#FFCB6B"
+    }
+  },
+  {
+    // Funções específicas do PHP
+    "scope": [
+      "entity.name.function.php"
+    ],
+    "settings": {
+      "foreground": "#89d0ff"
+    }
+  },
+  {
+    // Strings de texto
+    "scope": [
+      "string"
+    ],
+    "settings": {
+      "foreground": "#57b5d1"
+    }
+  },
+  {
+    // Sinal de igualdade e operadores similares
+    "scope": [
+      "keyword"
+    ],
+    "settings": {
+      "foreground": "#f6c6fa"
+    }
+  },
+  {
+    // Constantes de linguagem
+    "scope": [
+      "constant.language"
+    ],
+    "settings": {
+      "foreground": "#d77747"
+    }
+  },
+  {
+    // Números constantes
+    "scope": [
+      "constant.numeric"
+    ],
+    "settings": {
+      "foreground": "#CD835D"
+    }
+  },
+  {
+    // Modificadores de armazenamento (como "static", "public")
+    "scope": [
+      "storage.type",
+      "storage.modifier"
+    ],
+    "settings": {
+      "foreground": "#ff89f9"
+    }
+  },
+  {
+    // Comentários (especificamente, comentários doc no PHP)
+    "scope": [
+      "keyword.other"
+    ],
+    "settings": {
+      "foreground": "#7FDBCA"
+    }
+  },
+  {
+    // Aliases de classe e namespace no PHP
+    "scope": [
+      "entity.name.type.namespace.php",
+      "entity.other.alias.php"
+    ],
+    "settings": {
+      "foreground": "#248faf"
+    }
+  },
+  {
+    // Nomes de classe no PHP
+    "scope": [
+      "entity.name.type.class.php",
+      "entity.other.inherited-class.php"
+    ],
+    "settings": {
+      "foreground": "#B6C3EF"
+    }
+  },
+  {
+    // Funções padrão do PHP
+    "scope": [
+      "support.function"
+    ],
+    "settings": {
+      "foreground": "#a1ff6b"
+    }
+  }
+]
