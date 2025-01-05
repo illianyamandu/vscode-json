@@ -39,7 +39,7 @@ VSCode-JSON
 
 ---
 
-### **4. Available Themes**
+### **Available Themes**
 
 ## 🎨 Available Themes
 
