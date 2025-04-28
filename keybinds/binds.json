@@ -109,5 +109,14 @@
     {
         "key": "ctrl+n ctrl+f",
         "command": "explorer.newFolder"
+    },
+    {
+        "key": "alt+oem_minus",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
     }
 ]
