@@ -21,10 +21,13 @@
     ],
     // "editor.lineHeight": 45, // para tela grande
     "editor.lineHeight": 40, // para tela pequena    
-    "editor.letterSpacing": 1.6,
+    // "editor.letterSpacing": 1.2,
+    "editor.letterSpacing": 1.4,
+    // "editor.letterSpacing": 1.6,
     // "editor.letterSpacing": 2,
     // "editor.fontSize": 12.2,
     // "editor.fontSize": 12.5,
+    // "editor.fontSize": 13,
     "editor.fontSize": 13.5,
     // "editor.fontSize": 14,
     // "editor.fontSize": 14.5, 
@@ -62,19 +65,19 @@
             // "support.class.php", //nome da classe
             // "entity.name.function", // método das classes
             "entity.other.attribute-name",
-            "keyword.operator.relational",
             "meta.delimiter.period",
             "meta.selector",
             "entity.name.tag.doctype", 
             "meta.tag.sgml.doctype",
             "variable.other.object.property",
-            "keyword.operator.comparison",
             "keyword.control.flow.js",
             "keyword.control.ruby",
             "keyword.control.loop.js",
             "keyword.control.import.js",
             "keyword.control.from.js",
-            "keyword.operator.instanceof.js",
+            // "keyword.operator.relational",
+            // "keyword.operator.comparison",
+            // "keyword.operator.instanceof.js",
             "italic",
             "quote",
             "meta.tag.sgml.doctype.html",
@@ -89,19 +92,20 @@
              "fontStyle": ""
            }
          },
-         {
-            "scope": [ 
-                "keyword.other.DML.sql"
-            ],
-            "settings": {
-                "foreground": "#E4F0FBD0"
-            }
-          },
+        //  {
+        //     "scope": [ 
+        //         "keyword.other.DML.sql"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#E4F0FBD0"
+        //     }
+        //   },
         //  {
         //     "scope": [ 
         //         "keyword.control.return.php"
         //     ],
         //     "settings": {
+        //         "foreground": "#4DC3FE",
         //         "fontStyle": ""
         //     }
         //   },
@@ -161,7 +165,34 @@
         //         "punctuation.definition.variable.php"
         //     ],
         //     "settings": {
-        //         "foreground": "#e4b6ef"
+        //         "foreground": "#BFC4C9"
+        //     }
+        //   },
+        //  {
+        //     "scope": [ // sinal ternário '?:'
+        //         "keyword.operator.ternary.php"
+        //     ],
+        //     "settings": {
+        //         "fontStyle": ""
+        //         // "foreground": "#edb6ef"
+        //     }
+        //   },
+        //  {
+        //     "scope": [ // sinal recebe '='
+        //         "keyword.operator.assignment.php"
+        //     ],
+        //     "settings": {
+        //         "fontStyle": ""
+        //         // "foreground": "#edb6ef"
+        //     }
+        //   },
+        //  {
+        //     "scope": [ // sinal igual '==='
+        //         "keyword.operator.comparison.php"
+        //     ],
+        //     "settings": {
+        //         "fontStyle": ""
+        //         // "foreground": "#edb6ef"
         //     }
         //   },
         //  {
@@ -169,7 +200,8 @@
         //         "keyword.operator.class.php"
         //     ],
         //     "settings": {
-        //         "foreground": "#edb6ef"
+        //         "fontStyle": ""
+        //         // "foreground": "#edb6ef"
         //     }
         //   },
         //  {
@@ -185,7 +217,8 @@
         //         "keyword.operator.null-coalescing.php"
         //     ],
         //     "settings": {
-        //         "foreground": "#e8b6ef"
+        //         "fontStyle": ""
+        //         // "foreground": "#e8b6ef"
         //     }
         //   },
         //   {
@@ -193,7 +226,7 @@
         //       "keyword.other.type.php",
         //     ],
         //     "settings": {
-        //       "foreground": "#C76482"
+        //       "foreground": "#A8A8FF"
         //     }
         //   },
         //   {
@@ -201,7 +234,7 @@
         //       "keyword.control",
         //     ],
         //     "settings": {
-        //       "foreground": "#ff89f9"
+        //       "foreground": "#4DC3FE"
         //     }
         //   },
         //   {
@@ -234,7 +267,15 @@
         //         "support.class",
         //     ],
         //     "settings": {
-        //         "foreground": "#31B6D3"
+        //         "foreground": "#92DEF6"
+        //     }
+        //   },
+        //   {
+        //     "scope": [ // Variáveis de parâmetros
+        //         "entity.name.variable.parameter.php",
+        //     ],
+        //     "settings": {
+        //         "foreground": "#92DEF6"
         //     }
         //   },
         //   {
@@ -242,7 +283,7 @@
         //         "entity.name.function",
         //     ],
         //     "settings": {
-        //       "foreground": "#FFCB6B"
+        //       "foreground": "#BFC4C9"
         //     }
         //   },
         //   {
@@ -286,12 +327,38 @@
         //     }
         //   },
         //   {
+        //     "scope": [
+        //         "meta.class.body.php meta.function.php",
+        //         "meta.class.body.php storage.modifier.php"
+        //     ],
+        //     "settings": {
+        //         "fontStyle": "",
+        //         "foreground": "#BFC4C9"
+        //     }
+        //   },
+        //   {
         //     "scope": [ // Funções
         //         "storage.type",
         //         "storage.modifier"
         //     ],
         //     "settings": {
-        //         "foreground": "#ff89f9"
+        //         "foreground": "#4DC3FE"
+        //     }
+        //   },
+        //   {
+        //     "scope": [ // 'function'
+        //         "storage.type.function",
+        //     ],
+        //     "settings": {
+        //         "foreground": "#4DC3FE"
+        //     }
+        //   },
+        //   {
+        //     "scope": [ // 'class'
+        //         "storage.type.class",
+        //     ],
+        //     "settings": {
+        //         "foreground": "#A8A8FF"
         //     }
         //   },
         //   {
@@ -299,8 +366,7 @@
         //         "keyword.other"
         //     ],
         //     "settings": {
-        //     //   "foreground": "#FFCB6B"
-        //       "foreground": "#7FDBCA"
+        //       "foreground": "#A8A8FF"
         //     }
         //   },
         //   {
@@ -339,11 +405,13 @@
     "editor.formatOnPaste": false,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "workbench.startupEditor": "none",
+    "php.files.exclude": ["**/vendor/facebook/**"],
     // Remove .fvm files from search
     "search.exclude": {
         "**/.fvm": true,
         "**/node_modules": true,
-        "**/dist": true
+        "**/dist": true,
+        "**/php-business-sdk": true,
     },
     // Remove from file watching
     "files.watcherExclude": {
@@ -377,6 +445,7 @@
         // colors that match the background
         "tree.indentGuidesStroke": "#080808",
         "terminal.background": "#080808",
+        "terminal.border": "#080808",
         "tab.activeBackground": "#080808",
         "tab.unfocusedInactiveBackground": "#080808",
         "tab.selectedBackground": "#080808",
@@ -387,22 +456,25 @@
         "editorGutter.background": "#080808",
         "sideBarSectionHeader.background": "#080808",
         
+        // ZEN MODE background
+        "editorPane.background": "#080808",
+
+        
         // STATUS BAR
-        "statusBar.border": "#131212",
-        "statusBar.background": "#131212",
+        "statusBar.border": "#080808",
+        "statusBar.background": "#080808",
 
         // SIDEBAR
-        "sideBar.background": "#131212",
-        "sideBar.border": "#131212",
+        "sideBar.background": "#14161F",
+        "sideBar.border": "#14161F",
 
         // "backgro"
 
 
 
-
         // ONLY FOR DARK THEME
-        //"panelTitle.activeForeground": "#cccbc7",
-        //"panelTitle.inactiveForeground": "#b5b5af",
+        // "panelTitle.activeForeground": "#cccbc7",
+        // "panelTitle.inactiveForeground": "#b5b5af",
         //"panel.border": "#ffffff00",
         //"panel.background": "#4c494921",
 
@@ -410,32 +482,37 @@
         "editorCursor.foreground": "#1f67ec8f",
         // "editorCursor.foreground": "#711fec8f",
 
-        // Backgound color
-        // "editor.background": "#00001F", // Azul escuro
-        // "editor.background": "#03091E", // Azul escuro
-        // "editor.background": "#011627", // Azul escuro
-        // "editor.background": "#090321", // Roxo escuro
-        // "editor.background": "#160631", // Roxo escuro2
-        // "editor.background": "#021223", // Azul escuro
-        // "editor.background": "#131827", // Azul claro
-        // "editor.background": "#151C2D", // Azul num sei
-        // "editor.background": "#060f0c", // Verde escur;o
-        "editor.background": "#080808", // Black;
-        // "editor.background": "#181514", // Marrom;;
-        // "editor.background": "#1E1E2E", // Black-Blue
-        // "editor.background": "#1A1C24", // Black-gray
-        // "editor.background": "#1f2224", // Black-gray
-        // "editor.background": "#1b1c29", // Black-gray dracula
-        // "editor.background": "#0F111A", // padrão do tema
-        // "editor.background": "#141A24", // padrão do tema
-        // "editor.background": "#1d1d20", // cinza
-        // "editor.background": "#1A1C1E", // cinza escuro
-        // "editor.background": "#141416", // cinza mais escuro
-        // "editor.background": "#1B1E28", // poimandres
+        // Background color
+        // "editor.background": "#00001F", // Azul escuro profundo
+        // "editor.background": "#03091E", // Azul escuro suave
+        // "editor.background": "#011627", // Azul escuro marítimo
+        // "editor.background": "#090321", // Roxo escuro profundo
+        // "editor.background": "#160631", // Roxo escuro intenso
+        // "editor.background": "#021223", // Azul escuro com tom frio
+        // "editor.background": "#131827", // Azul médio suave
+        // "editor.background": "#151C2D", // Azul acinzentado
+        // "editor.background": "#060f0c", // Verde escuro profundo
+        "editor.background": "#080808", // Preto puro
+        // "editor.background": "#181514", // Marrom escuro quente
+        // "editor.background": "#1E1E2E", // Preto-azulado
+        // "editor.background": "#1A1C24", // Preto acinzentado com tom frio
+        // "editor.background": "#1f2224", // Cinza carvão com um toque de preto
+        // "editor.background": "#1b1c29", // Cinza escuro com um tom levemente azulado
+        // "editor.background": "#0F111A", // Cinza neutro escuro
+        // "editor.background": "#141A24", // Cinza frio escuro
+        // "editor.background": "#1d1d20", // Cinza neutro com leve tom quente
+        // "editor.background": "#1A1C1E", // Cinza escuro quase preto
+        // "editor.background": "#141416", // Cinza muito escuro
+        // "editor.background": "#1B1E28", // Poimandres - theme
+        // "editor.background": "#1F2937", // Azul escuro com tom frio
+        // "editor.background": "#171923", // LARAVEL - Cinza profundo com tom azulado
+        // "editor.background": "#14161F", // LARAVEL - Cinza escuro com tom azulado
+
 
         // <========= CLAROS =========>
         // "editor.background": "#dddbdb",
         // "editor.background": "#dce0e2",
+        // "editor.background": "#CECCCF",
         // "editor.background": "#FCF5E2",
         // "editor.background": "#EDE8D4",
         
@@ -502,13 +579,13 @@
     "phpunit.paths": {},
     "[php]": {
         "editor.defaultFormatter": "kokororin.vscode-phpfmt",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
     },
     "emeraldwalk.runonsave": {
         "commands": [
             {
-                //"match": "\\.php$",
-                //"cmd": "${workspaceFolder}/vendor/bin/pint ${file}"
+                "match": "\\.php$",
+                "cmd": "${workspaceFolder}/vendor/bin/pint ${file}"
             }
         ]
     },
@@ -538,7 +615,6 @@
     "terminal.integrated.cursorStyle": "line",
     // Set the default
     "editor.formatOnSave": false,
-    "workbench.editor.enablePreview": false,
     "terminal.integrated.letterSpacing": 2,
     "editor.cursorBlinking": "expand",
     "editor.cursorStyle": "block",
@@ -564,7 +640,7 @@
     "editor.guides.bracketPairsHorizontal": true,
     "glassit.alpha": 255,
     "glassit.step": 5,
-    "workbench.colorTheme": "poimandres",
+    "workbench.colorTheme": "Vesper",
     "editor.minimap.showSlider": "always",
     "editor.minimap.maxColumn": 100,
     "editor.minimap.renderCharacters": true,
@@ -572,7 +648,6 @@
     "editor.scrollbar.horizontalScrollbarSize": 6,
     "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": true,
     "laravel-pint.enable": true,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "explorer.compactFolders": false,
     "window.customTitleBarVisibility": "windowed",
     "security.promptForLocalFileProtocolHandling": false,
@@ -582,10 +657,28 @@
     "apc.imports": [
         "file:///c:/Users/4Selet/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
     ],
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.iconTheme": "Monokai Classic Monochrome Icons",
     "workbench.productIconTheme": "fluent-icons",
+    "zenMode.showTabs": "none",
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.editor.enablePreview": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
     "breadcrumbs.enabled": false,
-    "zenMode.showTabs": "single",
-    "Laravel.showErrorPopups": false,
+    "workbench.editor.showTabs": "single",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
     "workbench.activityBar.location": "hidden",
 }
