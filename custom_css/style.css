@@ -87,7 +87,7 @@ li.action-item.icon.checked a.action-label.codicon {
     transform: translateY(-50%) !important;
     top: 50% !important;
     /* box-shadow: 0px 0px 8px 12px rgba(173, 215, 255, 0.45) !important; */
-    box-shadow: 0px 0px 8px 12px hsla(27, 100%, 80%, 0.555) !important;
+    box-shadow: 0px 0px 8px 12px hsla(212, 100%, 74%, 0.555) !important;
     padding: 10px 10px 18px 10px !important;
     border-radius: 20px !important;
 }
